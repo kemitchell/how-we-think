@@ -5,7 +5,7 @@ all: $(targets)
 
 %.pdf: %.tex
 	latexmk -pdf $<
-	latexmk -C $<
+	latexmk -c $<
 
 .PHONY: clean
 
